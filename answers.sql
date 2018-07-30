@@ -15,10 +15,10 @@
   DELETE FROM people WHERE name = 'Ben Affleck';
 -- 8. The cinema has just heard that they will be holding an exclusive midnight showing of 'Captain Marvel'!!
    -- Create a new entry in the 'movies' table to reflect this.
-
+  INSERT INTO movies (title, year, show_time) VALUES ('Captain Marvel', 2019, '00:00');
 -- 9. The cinema would also like to make the Guardians movies a back to back feature. Find out the show time of
     -- "Guardians of the Galaxy" and set the show time of "Guardians of the Galaxy 2" to start two hours later.
-
+  UPDATE movies SET show_time = '23:20' WHERE title = 'Guardians of the Galaxy 2';
 
     -- psql
     -- \c marvel
